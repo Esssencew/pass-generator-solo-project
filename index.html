@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <div class="item">
+        <h1 class="title karla-extrabold">Generate a <span class="title-span"><br>random password</span></h1>
+        <p class="txt inter-regular">Never use an insecure password again.</p>
+        <button class="btn inter-medium" id="generate" onclick="generatePass()">Generate passwords</button>
+        <hr class="line">
+        <div class="passwords">
+            <p class="passwordOne password" id="passwordOne"></p>
+            <p class="passwordTwo password" id="passwordTwo"></p>
+        </div>
+        </div>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
