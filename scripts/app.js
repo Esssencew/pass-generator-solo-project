@@ -14,7 +14,12 @@ function randomIndex() {
 }
 
 function generatePass() {
-    passOneEl.textContent = randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() 
-    passTwoEl.textContent = randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() + randomIndex() 
+    const range = 15
+    passOneEl.textContent = ``
+    passTwoEl.textContent = ``
+    for (let i = 0; i < range; i++) {
+        passOneEl.textContent += randomIndex()
+        passTwoEl.textContent += randomIndex()
+    }
 }
 
